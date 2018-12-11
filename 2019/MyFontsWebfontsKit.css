@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3678232, 2018-11-26T08:01:44-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: VenusURW-Bol by URW
+ * URL: https://www.myfonts.com/fonts/urw/venus/urw-t-bold/
+ * Copyright: Copyright 2010 by (URW)++ Design &amp; Development GmbH
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3678232
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/382018");
+
+  
+@font-face {font-family: 'VenusURW-Bol';src: url('webfonts/382018_0_0.eot');src: url('webfonts/382018_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/382018_0_0.woff2') format('woff2'),url('webfonts/382018_0_0.woff') format('woff'),url('webfonts/382018_0_0.ttf') format('truetype');}
+ 

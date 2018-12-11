@@ -1,0 +1,1048 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html,body {
+    height:100%;
+}
+
+#wrapper{
+  overflow: hidden;
+  position: relative;
+  height: auto;
+/* decomment below to show full worm; hack required to avoid extra scrollbar */
+/* padding-bottom: 250px;
+margin-bottom: -250px; */
+}
+
+
+#wmobile{
+  display: block;
+}
+
+.wrapper{
+  display: none;
+}
+
+#wurm{
+padding-bottom: 100em !important;
+}
+
+
+.mySlides{
+  max-width: 100%;
+}
+
+#buttondiv{
+  text-align: center;
+  /* background-color: green; */
+}
+
+.arrow{
+  text-decoration: none;
+  font-size: 1.3em;
+
+}
+
+.w3-button{
+border: none;
+display: inline-block;
+padding: 8px 16px;
+/* vertical-align: middle; */
+overflow: hidden;
+color: black;
+/* background-color: blue; */
+text-align: center;
+cursor: pointer;
+white-space: nowrap;
+margin-top: 10px;
+border-radius: 0;
+font-size: 1.9em;
+}
+
+
+
+/* #arrowscroll{
+display: none;
+float: right;
+position: relative;
+margin-right: 2.5%;
+text-align: center;
+font-size: 1.2em;
+top: 40vh;
+} */
+
+#arrowscroll{
+display: none;
+position: absolute;
+text-align: center;
+font-size: 1.4em;
+top: -70px;
+left: 1775px;
+z-index: 100;
+}
+
+
+.row {
+  padding-top: 2em;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;   }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+  /* FAQ COLLAPSE/EXPAND STYLES */
+  * {
+    box-sizing: border-box;
+  }
+  .faqanswer {
+  	display: none;
+  	width: 100%;
+  	background: #000000;
+  	padding: 12px 20px 0 30px;
+  }
+
+  .faqanswer p {
+    font-size: 1em;
+  	line-height: 1.4em;
+    margin-bottom: 0.6em;
+    margin-left: 10px;
+    }
+
+    .faqanswer h1 {
+      margin-left: 10px;
+      }
+
+      .faqanswer h2 {
+        margin-left: 10px;
+        }
+
+.question{
+  padding-left: 17px;
+  clear: left;
+    color: black;
+}
+
+  .faqanswer a.active {
+  	font-weight: medium;
+    background-color: #ffff00 !important;
+  }
+
+  .togglefaq {
+    display:table-cell;
+    text-decoration: none;
+    background-color: #ffff00;
+    /*background-color: rgba(35,150,140, 1);*/
+  	color: black;
+  	font-size: 1em;
+  	padding: 10px 20px;
+  	line-height: 20px;
+  	display: block;
+  	border: 2px solid #000000;
+    width: 100%;
+  	margin-bottom: -1px;
+    position: relative;
+  }
+
+  .fa-plus {
+  	color: black;
+  	margin-right: 20px;
+    margin-bottom: 0em;
+    padding-left: 10px;
+  	font-size: 2em;
+  	float:left;
+    /* background-color: green; */
+    position: absolute;
+    left: 0;
+  }
+
+  .fa-minus {
+    color: black;
+    margin-right: 20px;
+    margin-bottom: 0em;
+    padding-left: 10px;
+    font-size: 2em;
+    float:left;
+    /* background-color: green; */
+    position: absolute;
+    left: 0;
+  }
+
+
+  p {
+    margin: 0;
+    padding-bottom: 0px;
+  }
+
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%;}
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; margin-top: 2em !important;}
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 100%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+
+  @font-face {
+      font-family: tstar;
+      src: url('../fonts/T-Star-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: tstar;
+      src: url('../fonts/T-Star-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: bold;
+  }
+
+@font-face {
+      font-family: tstar;
+      src: url('../fonts/T-Star-Medium.woff') format('woff');
+      font-weight: medium;
+      font-style: medium;
+  }
+
+  @font-face {
+        font-family: Venus;
+        src: url('../fonts/URW-VenusURW-Lig.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+    .VenusURW-Bol {
+    	font-family: VenusURW-Bol;
+      src: url('../webfonts/382018_0_0.woff') format('woff');
+    	font-weight: bold;
+    	font-style: normal;
+    }
+
+body {
+  background-color: black;
+  font-family: Venus; "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url('../fonts/URW-VenusURW-Lig.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.4;
+  /* letter-spacing: 0px; */
+
+  color: #ffffff;
+   /* Disable horizontal scroll */
+  /* overflow-x: hidden; */
+
+
+}
+
+#logo{
+  display: block;
+  width: 10em;
+margin-bottom: 5px;
+    margin-left: -5px;
+}
+
+.logoicon {
+    width: 4.5em;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    font-family: tstar; "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url('../fonts/T-Star-Medium.woff') format('woff');
+
+    height: 100%;
+    max-height: none;
+    width: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: medium;
+    letter-spacing: 0.17em;
+    background-color: rgb(0,0,255); /* blue fallback color */
+    background-color: black; /* blue w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    padding-bottom: 0.3em;
+    text-decoration: none;
+    font-size: 2.3em;
+    line-height: 1.1em;
+    color: #ffffff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 0.7em;
+    right: 0.7em;
+    font-size: 1em;
+}
+
+#smicons{
+  margin: 0.6em auto;
+  padding: 0.2em;
+  width: 6em;
+  font-size: 0.9em;
+  /* background-color: green; */
+
+}
+
+.logonav {
+    width: 4em;
+    margin-left: -30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#smicons2{
+
+display: none;
+  /* background-color: green; */
+
+}
+
+.smicon{
+ float: left;
+ margin: 0.039em;
+text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  font-family: tstar; "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url('../fonts/T-Star-Medium.woff') format('woff');
+
+    background-color: #000000;
+    overflow: hidden;
+    font-weight: medium;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* border-bottom: 0.07em solid #ffffff ; */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: medium;
+}
+
+
+/* Add an active class to highlight the current page */
+/* .topnav .active { */
+    /* background-color: #000088 !important; */
+    /* color: #ffff00;
+    font-weight: bold;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+#textcol{
+
+  padding-bottom: 1em;
+}
+
+#demo {
+    width: 180%;
+    height: 0;
+     /* padding-top: 10%;  */
+    position: relative;
+    box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+margin:0;
+
+}
+
+svg {
+    width: 110%;
+    position: absolute;
+    margin-top: -70% !important;
+    /* padding-bottom: 15% !important; */
+    left: -20%;
+    right: -40%;
+    z-index: -100;
+
+    /* overflow-y: hidden; */
+
+}
+
+#wortmarke{
+display: none;
+}
+
+/*#titel{
+display: none;
+}*/
+
+#wortmarke2{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* top: 0px; */
+  /* margin-top: 2.5em; */
+  margin-bottom: 2.9em;
+
+  width: 60%;
+  max-height: 100%;
+  z-index: 5000;
+}
+
+
+#imp{
+  margin-top: 3.1em;
+}
+
+#maintext{
+/* background-color: cyan; */
+padding-top: 2.5em;
+}
+
+/*SCROLLPATH*/
+/* body.home {
+        overflow: hidden;
+} */
+
+#text{
+    position: relative;
+    /* width: 40%; */
+}
+
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text0, #start {
+     position: absolute;
+     /* background-color: cyan; */
+     width: 25em;
+    /* display: none; */
+    /* letter-spacing: 1em; */
+
+}
+
+#start {
+    left: -400px;
+    top: 3250px;
+    text-align: center;
+    line-height: 0.5;
+    }
+
+#click {
+  font-family: tstar;
+  src: url('../fonts/T-Star-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+        font-size: 1.5em;
+}
+
+#text1 {
+    /* left: 110em;
+    top: 25em; */
+    left: -200px;
+    top: 2450px;
+}
+
+#text2 {
+    /* left: 2em;
+    top: 9em; */
+    left: 2000px;
+    top: 3150px;
+}
+
+#text3 {
+    /* left: 101em;
+    top: 62em; */
+   left: 2100px;
+    top: 2100px;
+}
+
+#text4 {
+    /* left: -30em;
+    top: 99em; */
+    left: -100px;
+    top: 1700px;
+}
+
+#text5 {
+    /* left: -35em;
+    top: 153em; */
+    left: 2400px;
+    top: 1000px;
+}
+
+#text6 {
+    /* left: 115em;
+    top: 110em; */
+    left: 2300px;
+    top: 300px;
+    margin: 3%;
+}
+
+#text7 {
+    /* left: 40em;
+    top: 122em; */
+    left: 900px;
+    top: 650px;
+}
+
+#arrow {
+    position: relative;
+    left: 85em;
+    top: -6em;
+}
+
+.bold {
+    color: deeppink;
+}
+
+#map {
+        height: 400px;
+        width: 600px;
+}
+
+/*FADE IN/OUT TEXTE*/
+
+.show {
+    opacity: 0;
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.0rem;
+  font-weight: 300; }
+h1 {
+  font-family: tstar;
+  src: url('../fonts/T-Star-Regular.woff') format('woff');
+  padding-bottom: 5px;
+
+  font-size: 3.3rem; line-height: 1.2;  letter-spacing: 0.16rem; color: #ffff00; text-transform: uppercase; font-weight: bold;}
+h2 {    font-family: tstar;
+  src: url('../fonts/T-Star-Medium.woff') format('woff');
+
+
+  font-size: 2.4rem; line-height: 1.1; padding-bottom: 0.18em; padding-top: 0.0em; letter-spacing: 0.17rem; text-transform: uppercase; color: #ffffff; font-weight: medium;}
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* mark{
+  background-color: #000088;
+  color: white;
+  padding-top: 0.3em;
+} */
+
+mark { text-transform: uppercase; color: white; background-color: black;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-family: tstar;
+    src: url('../fonts/T-Star-Medium.woff') format('woff');
+
+    font-size: 3.3rem;
+    padding-bottom: 5px;
+  }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0;
+   letter-spacing: 0.15rem; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #ffff00; }
+a:hover {
+  color: #ffffff; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button {
+  display: inline-block;
+  font-family: tstar;
+  src: url('../fonts/T-Star-Medium.woff') format('woff');
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #ffff00;
+  letter-spacing: 1.5px;
+  border-radius: 0px;
+  box-sizing: border-box;
+/* border: 1px solid; */
+border: none;
+padding: 10px;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 2px solid #ffff00; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+  #maintext{
+
+  padding-top: 2.5em;
+  }
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  #maintext{
+
+  padding-top: 9em;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 1024px) {
+
+
+  /*SCROLLPATH*/
+  body.home {
+          overflow: hidden;
+  }
+
+
+  .row {
+    padding-top: 1em;
+  }
+
+  #wmobile{
+      display: none;
+    }
+
+    .wrapper{
+      display: block;
+      min-height: 100%;
+    }
+
+.logo2{
+margin-bottom: 20px !important;
+}
+
+#arrowscroll{
+  display: block;
+  z-index: 100;
+}
+
+    #wortmarke{
+      display: block;
+      margin-top: 4.5em;
+      margin-left: 75%;
+      float: left;
+      /* width: 20%; */
+      height: 80vh;
+      position: fixed;
+      z-index: 100;
+    }
+
+     /*#titel{
+    font-family: tstar; "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-size: 2em;
+      display: block;
+      margin-top: 7em;
+      margin-left: 35%;
+      float: left;
+      height: 80vh;
+      position: fixed;
+      z-index: 100;
+    }*/
+
+    #titel{
+    font-family: tstar; "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-size: 2em;
+    }
+
+    #wortmarke2{
+      display: none;
+    }
+
+  #imp{
+    margin-top: 3em;
+  }
+
+  .topnav a {
+      float: left;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 8px -0px 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+      font-weight: 10;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+      /* background-color: #00003C; */
+      /* color: #ffffff !important; */
+      text-decoration: underline;
+      text-decoration-color: #ffff00;
+      font-weight: medium;
+  }
+
+  /* Add an active class to highlight the current page */
+  .topnav .active {
+      /* background-color: #000088 !important; */
+      color: #ffff00;
+      font-weight: medium;
+  }
+
+  #smicons2{
+
+  display: inline;
+  float: right;
+      font-size: 1em;
+    /* background-color: green; */
+
+  }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/*Path Anzeige*/
+.sp-canvas {
+	display: none;
+}
